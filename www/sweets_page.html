@@ -1,0 +1,113 @@
+<!DOCTYPE html> <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
+user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and 
+remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+	 <script type="text/javascript">
+      angular.module('counter', ['ionic'])
+      .controller("CountCtrl", function($scope) { <!--Counter -->
+        $scope.count = 0;
+      });
+    </script>
+  </head>
+  <body ng-app="counter" ng-controller="CountCtrl">
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Calorific</h1>
+      </ion-header-bar>
+      <ion-content>
+	  <div class="list card"> 
+	   <label class="item item-input">
+            <input type="number" ng-model="count" /> <!--input type -->
+          </label>
+   <div class="item item-avatar">
+    <img src="http://www.safefood.eu/SafeFood/media/SafeFoodLibrary/Documents/Consumer/Healthy%20Living/new-food-pyramid-2012.JPG?width=640&height=369&ext=.jpg">
+    <h2>Calorie App</h2>
+    <p>You Are What You Eat!</p>
+  </div>
+  
+  <h1 align="center">Mars Bar</h1> <!--Headding -->
+  <div class="item item-body">
+    <img class="full-image" src="images/mars_bar.jpg"> <!-- Source of image -->
+    <p>
+		Mars (also Mars bar) is a chocolate bar manufactured by American chocolate company Mars, Incorporated. It was first manufactured in Slough, Berkshire in the United Kingdom in 1932 and was advertised to the trade as being made with Cadbury's chocolate as "couverture".
+		In the United States, a different confection bore the Mars bar name. Featuring nougat, soft caramel, almonds, and a milk chocolate coating, the American Mars bar was discontinued in 2002. A similar bar featuring the Mars name was relaunched in the US in 2010
+		<p>	  Calories = 242  </p> <!-- Description of product -->
+			</p>
+    
+	  </div>
+	  <button class="button button-block button-positive" ng-click="count = count + 242"> <!-- This button when click will give an output of the value given -->
+				Add Calories <!-- Button for adding calories -->
+			  </button>
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+  </div>
+ 
+ <h1 align="center">Crunchie</h1> <!--Headding-->
+  <div class="item item-body">
+    <img class="full-image" src="images/crunchie.jpg"> <!-- Image Source -->
+    <p>
+		Crunchie is a brand of British chocolate bar with a honeycomb toffee sugar centre. It is made by Cadbury and was originally launched by J. S. Fry & Sons in 1929.[1] Fry had merged with Cadbury in 1919 and Crunchie later became a Cadbury bar.
+		A similar chocolate bar called the Violet Crumble competes in Australia manufactured by Nestlé.
+    </p> <p>Calories = 185  </p> <!--Description of product -->
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 185"> <!-- This button when click will give an output of the value given -->
+            Add Calories     <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+ <h1 align="center">Moro</h1> <!--Heading -->
+  <div class="item item-body">
+    <img class="full-image" src="images/moro.jpg"> <!--Image source -->
+    <p>
+	One bar consists of nougat, biscuit and caramel filling and chocolate covering. The wrapper is blue, with the "Moro" logo in white. It is available in Ireland. In May 2006, Moro Peanut was launched, with the words "Formerly Starbar" displayed prominently on the label; the wrapper on this variant is red. In the summer of 2007 a Coconut Moro bar was released as a limited edition in Ireland and colloquially known as the Bounty Moro. The wrapper is white with the Moro logo in yellow with a blue outline.  	
+    </p> <!-- description of product -->
+    <p>Calories = 265 </p>
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 265"> <!-- This button when click will give an output of the value given -->
+           Add calories    <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div> <h1 align="center">Wispa</h1>
+  <div class="item item-body">
+    <img class="full-image" 
+src="images/wispa.jpg">
+    <p>
+      The velvety-textured milk chocolate bar first hit the shelves in 1981 before disappearing in 2003. But such was the popularity of this sumptuous milk chocolate with its tiny but dense bubbles, an online campaign began to bring it back. Cadbury was happy to oblige!Launched nationally in 1983 after a trial run in the North East of England, Wispa was available throughout the 1980s and 1990s and was re-born in 2007. <!-- Description of product -->
+    </p>
+ <p>Calories = 210</p>   
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 210">
+            Add Calories	<!--Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  <div class="bar bar-footer bar-balanced"> <!--Colour of footer -->
+  <div class="title">Footer</div> </div> <!--Footer -->
+      </ion-content>
+    </ion-pane>
+  </body>
+	
+</html>
+
