@@ -1,0 +1,111 @@
+<!DOCTYPE html> <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
+user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and 
+remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+	 <script type="text/javascript">
+      angular.module('counter', ['ionic'])
+      .controller("CountCtrl", function($scope) { <!--Counter -->
+        $scope.count = 0;
+      });
+    </script>
+  </head>
+  <body ng-app="counter" ng-controller="CountCtrl">
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Calorific</h1>
+      </ion-header-bar>
+      <ion-content>
+	  <div class="list card"> 
+	   <label class="item item-input">
+            <input type="number" ng-model="count" /> <!--input type -->
+          </label>
+   <div class="item item-avatar">
+    <img src="http://www.safefood.eu/SafeFood/media/SafeFoodLibrary/Documents/Consumer/Healthy%20Living/new-food-pyramid-2012.JPG?width=640&height=369&ext=.jpg">
+    <h2>Calorie App</h2>
+    <p>You Are What You Eat!</p>
+  </div>
+  
+  <h1 align="center">Chicken Breast</h1> <!--Headding -->
+  <div class="item item-body">
+    <img class="full-image" src="images/chicken_breast.jpg"> <!-- Source of image -->
+    <p>
+		Chicken breast must be the most versatile meat.  It is a white meat with very little fat and it is the perfect cut to slice up in stir-fries, marinate and grill, pan-fry or oven roast, filled with your favourite filling. Chicken breasts can also be baked or poached and used in salad, sandwiches or shredded and put into soups. 
+		<p>	  Calories = 134  </p> <!-- Description of product -->
+			</p>
+    
+	  </div>
+	  <button class="button button-block button-positive" ng-click="count = count + 134"> <!-- This button when click will give an output of the value given -->
+				Add Calories <!-- Button for adding calories -->
+			  </button>
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+  </div>
+ 
+ <h1 align="center">Chicken Kiev</h1> <!--Headding-->
+  <div class="item item-body">
+    <img class="full-image" src="images/chicken_kiev.jpg"> <!-- Image Source -->
+    <p>
+		The dish has traditionally been considered Ukrainian in origin since its name comes from Kiev, the capital of Ukraine. However, the Russian food historian William Pokhlebkin claimed that Chicken Kiev was invented in the St. Petersburg Merchants' Club in the early 20th century as Novo-Mikhailovsky cutlet, and was subsequently renamed Chicken Kiev by a Soviet restaurant
+    </p> <p>Calories = 380  </p> <!--Description of product -->
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 380"> <!-- This button when click will give an output of the value given -->
+            Add Calories     <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+ <h1 align="center">Steak</h1> <!--Heading -->
+  <div class="item item-body">
+    <img class="full-image" src="images/steak.jpg"> <!--Image source -->
+    <p>
+	A steak is a cut of meat sliced perpendicular to the muscle fibers, potentially including a bone. When the word "steak" is used without qualification, it generally refers to a beefsteak. In a larger sense, there are also fish steaks, ground meat steaks, pork steak and many more varieties. As a "top-quality ingredient", beef steaks "are perfect if properly grilled", but they can be pan-fried, or broiled. Steak is often grilled in an attempt to replicate the flavor of steak cooked over the glowing coals of an open fire. Steak can also be cooked in sauce, such as in steak and kidney pie, or minced and formed into patties, such as hamburgers.	
+    </p> <!-- description of product -->
+    <p>Calories = 277 </p>
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 277"> <!-- This button when click will give an output of the value given -->
+           Add calories    <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div> <h1 align="center">Bacon</h1>
+  <div class="item item-body">
+    <img class="full-image" 
+src="images/rashers.jpg">
+    <p>
+      Bacon is a meat product prepared from a pig and usually cured. It is first cured using large quantities of salt, either in a brine or in a dry packing; the result is fresh bacon (also known as green bacon).[3] Fresh bacon may then be further dried for weeks or months in cold air, or it may be boiled or smoked. Fresh and dried bacon is typically cooked before eating. Boiled bacon is ready to eat, as is some smoked bacon, but may be cooked further before eating. <!-- Description of product -->
+    </p>
+ <p>Calories = 44</p>   
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 44">
+            Add Calories	<!--Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  <div class="bar bar-footer bar-balanced"> <!--Colour of footer -->
+  <div class="title">Footer</div> </div> <!--Footer -->
+      </ion-content>
+    </ion-pane>
+  </body>
+	
+</html>
+

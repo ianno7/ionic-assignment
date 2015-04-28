@@ -1,0 +1,110 @@
+<!DOCTYPE html> <html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, 
+user-scalable=no, width=device-width">
+    <title></title>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- IF using Sass (run gulp sass first), then uncomment below and 
+remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+	 <script type="text/javascript">
+      angular.module('counter', ['ionic'])
+      .controller("CountCtrl", function($scope) { <!--Counter -->
+        $scope.count = 0;
+      });
+    </script>
+  </head>
+  <body ng-app="counter" ng-controller="CountCtrl">
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Calorific</h1>
+      </ion-header-bar>
+      <ion-content>
+	  <div class="list card"> 
+	   <label class="item item-input">
+            <input type="number" ng-model="count" /> <!--input type -->
+          </label>
+   <div class="item item-avatar">
+    <img src="http://www.safefood.eu/SafeFood/media/SafeFoodLibrary/Documents/Consumer/Healthy%20Living/new-food-pyramid-2012.JPG?width=640&height=369&ext=.jpg">
+    <h2>Calorie App</h2>
+    <p>You Are What You Eat!</p>
+  </div>
+  
+  <h1 align="center">Broccoli</h1> <!--Headding -->
+  <div class="item item-body">
+    <img class="full-image" src="images/brocolli.jpg"> <!-- Source of image -->
+    <p>
+		Broccoli is an edible green plant in the cabbage family whose large, flowering head is eaten as a vegetable. The word broccoli comes from the Italian plural of broccoli, which means "the flowering crest of a cabbage", and is the diminutive form of brocco, meaning "small nail" or "sprout". Broccoli is often boiled or steamed but may be eaten raw
+		<p>	  Calories = 34  </p> <!-- Description of product -->
+			</p>
+    
+	  </div>
+	  <button class="button button-block button-positive" ng-click="count = count + 34"> <!-- This button when click will give an output of the value given -->
+				Add Calories <!-- Button for adding calories -->
+			  </button>
+	  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+  </div>
+ 
+ <h1 align="center">Cauliflower</h1> <!--Headding-->
+  <div class="item item-body">
+    <img class="full-image" src="images/colliflower.jpg"> <!-- Image Source -->
+    <p>
+		Cauliflower is one of several vegetables in the species Brassica oleracea, in the family Brassicaceae. It is an annual plant that reproduces by seed. Typically, only the head (the white curd) is eaten. The cauliflower head is composed of a white inflorescence meristem. Cauliflower heads resemble those in broccoli, which differs in having flower buds. Brassica oleracea also includes broccoli, brussels sprouts, cabbage, collard greens, and kale, though they are of different cultivar groups.
+    </p> <p>Calories = 3 </p> <!--Description of product -->
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 3"> <!-- This button when click will give an output of the value given -->
+            Add Calories     <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  
+ <h1 align="center">Carrot</h1> <!--Heading -->
+  <div class="item item-body">
+    <img class="full-image" src="images/carrot.jpg"> <!--Image source -->
+    <p>
+	The carrot (Daucus carota subsp. sativus) is a root vegetable, usually orange in colour, though purple, red, white, and yellow varieties exist. It has a crisp texture when fresh. The most commonly eaten part of a carrot is a taproot, although the greens are sometimes eaten as well. It is a domesticated form of the wild carrot Daucus carota, native to Europe and southwestern Asia.
+    </p> <!-- description of product -->
+    <p>Calories = 41 </p>
+    
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 41"> <!-- This button when click will give an output of the value given -->
+           Add calories    <!-- Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div> <h1 align="center">Parsnip</h1>
+  <div class="item item-body">
+    <img class="full-image" src="images/parsnip.jpg">
+    <p>
+      Parsnips are sweet, succulent underground taproots closely related to the carrot family of vegetables. They have similar appearance and growth characteristics as other Apiaceae family members like carrots, parsley, celery, cumin, dill, etc. Botanically, they belong to the Umbelliferae (Apiaceae) family, in the genus, Pastinaca. <!-- Description of product -->
+    </p>
+ <p>Calories = 75</p>   
+  </div>
+  <button class="button button-block button-positive" ng-click="count = count + 75">
+            Add Calories	<!--Button for adding calories -->
+          </button>
+  <div class="item tabs tabs-secondary tabs-icon-left">
+   
+  </div>
+  <div class="bar bar-footer bar-balanced"> <!--Colour of footer -->
+  <div class="title">Footer</div> </div> <!--Footer -->
+      </ion-content>
+    </ion-pane>
+  </body>
+	
+</html>
+
