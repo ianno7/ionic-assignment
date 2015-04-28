@@ -9,8 +9,21 @@ user-scalable=no, width=device-width">
     <!-- IF using Sass (run gulp sass first), then uncomment below and 
 remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
+<script type="text/javascript">
+      angular.module('counter', ['ionic'])
+
+      .controller("CountCtrl", function($scope) {
+        $scope.count = 0;
+      });
+    </script>
     -->
-    <!-- ionic/angularjs js -->
+    <!-- io<script type="text/javascript">
+      angular.module('counter', ['ionic'])
+
+      .controller("CountCtrl", function($scope) {
+        $scope.count = 0;
+      });
+    </script>nic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
