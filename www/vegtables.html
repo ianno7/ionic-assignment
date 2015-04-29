@@ -26,7 +26,7 @@ remove the CSS includes above
   <body ng-app="counter" ng-controller="CountCtrl">
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Calorific</h1>
+        <h1 class="title">Calorie Tracker</h1>
       </ion-header-bar>
       <ion-content>
 	  <div class="list card"> 
@@ -35,7 +35,7 @@ remove the CSS includes above
           </label>
    <div class="item item-avatar">
     <img src="images/calorie.jpg">
-    <h2>Calorie App</h2>
+    <h2>Calorie Tracker</h2>
     <p>You Are What You Eat!</p>
   </div>
   
@@ -49,7 +49,7 @@ remove the CSS includes above
     
 	  </div>
 	  <button class="button button-block button-positive" ng-click="count = count + 34"> <!-- This button when click will give an output of the value given -->
-				Add Calories <!-- Button for adding calories -->
+				Add Your Calories <!-- Button for adding calories -->
 			  </button>
 	  <div class="item tabs tabs-secondary tabs-icon-left">
    
@@ -66,7 +66,7 @@ remove the CSS includes above
     
   </div>
   <button class="button button-block button-positive" ng-click="count = count + 3"> <!-- This button when click will give an output of the value given -->
-            Add Calories     <!-- Button for adding calories -->
+            Add Your Calories     <!-- Button for adding calories -->
           </button>
   <div class="item tabs tabs-secondary tabs-icon-left">
    
@@ -82,7 +82,7 @@ remove the CSS includes above
     
   </div>
   <button class="button button-block button-positive" ng-click="count = count + 41"> <!-- This button when click will give an output of the value given -->
-           Add calories    <!-- Button for adding calories -->
+           Add Your Calories    <!-- Button for adding calories -->
           </button>
   <div class="item tabs tabs-secondary tabs-icon-left">
    
@@ -95,13 +95,21 @@ remove the CSS includes above
  <p>Calories = 75</p>   
   </div>
   <button class="button button-block button-positive" ng-click="count = count + 75">
-            Add Calories	<!--Button for adding calories -->
+            Add Your  Calories	<!--Button for adding calories -->
           </button>
+
+<button class="button button-block button-assertive" ng-click="(count = 0) ">
+        Reset Your Calories
+</button>       <!--This is a reset Button-->
+
   <div class="item tabs tabs-secondary tabs-icon-left">
    
   </div>
-  <div class="bar bar-footer bar-balanced"> <!--Colour of footer -->
-  <div class="title">Footer</div> </div> <!--Footer -->
+  
+
+ <div class="bar bar-footer bar-balanced">  <!--Colour of footer -->
+  <div class="title">Copyright © Ian Gibbons 2015</div> </div> <!--Footer -->
+
       </ion-content>
     </ion-pane>
   </body>
